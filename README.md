@@ -2,7 +2,8 @@
 
 Docker image including:
 
- - Golang ([base image](https://hub.docker.com/_/golang/))
+ - Golang ([base image](https://hub.docker.com/_/golang/)),
+ - [dep](https://github.com/golang/dep),
  - Node.js,
  - and Yarn.
 

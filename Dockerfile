@@ -1,8 +1,9 @@
 FROM golang:latest
 
-ENV NODE_VERSION 9.10.1
 ENV ARCH x64
+ENV NODE_VERSION 9.10.1
 ENV YARN_VERSION 1.5.1
+ENV DEP_VERSION 0.4.1
 
 WORKDIR $GOPATH
 
@@ -25,3 +26,5 @@ RUN curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$
     ln -s /opt/yarn/bin/yarn /usr/local/bin/yarnpk && \
     rm -f "yarn-v$YARN_VERSION.tar.gz"
 
+# Install go dep
+RUN curl -fSL https://github.com/golang/dep/releases/download/v0.4.1/dep-linux-amd64 > /usr/local/bin/dep && chmod 755 /usr/local/bin/dep
