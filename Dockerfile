@@ -27,4 +27,4 @@ RUN curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$
     rm -f "yarn-v$YARN_VERSION.tar.gz"
 
 # Install go dep
-RUN curl -fSL https://github.com/golang/dep/releases/download/v0.4.1/dep-linux-amd64 > /usr/local/bin/dep && chmod 755 /usr/local/bin/dep
+RUN curl -fSL "https://github.com/golang/dep/releases/download/v$DEP_VERSION/dep-linux-amd64" > /usr/local/bin/dep && chmod 755 /usr/local/bin/dep
