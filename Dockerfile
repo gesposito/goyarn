@@ -1,4 +1,4 @@
-F.r281.g5fa7ba48ROM golang:latest
+FROM golang:latest
 
 ENV ARCH x64
 ENV NODE_VERSION 10.1.0
