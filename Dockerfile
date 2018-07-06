@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM golang:1.9
 
 ENV ARCH x64
 ENV NODE_VERSION 10.1.0
